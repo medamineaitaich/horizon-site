@@ -6,77 +6,11 @@ import { Link } from 'react-router-dom';
 import { Calendar, ArrowRight } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { useLocalStorage } from '@/hooks/useLocalStorage';
+import { blogPosts } from '@/data/blogPosts';
 import { Button } from '@/components/ui/button';
 
 const BlogPage = () => {
-  const [blogPosts] = useLocalStorage('blogPosts', [
-    {
-      id: 1,
-      slug: 'boost-website-speed-2026',
-      title: 'How to Boost Your Website Speed in 2026',
-      excerpt: 'Learn the latest techniques to optimize your website performance and improve user experience with cutting-edge speed optimization strategies.',
-      featuredImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
-      date: '2026-02-10',
-      category: 'Performance'
-    },
-    {
-      id: 2,
-      slug: 'wordpress-security-best-practices',
-      title: 'WordPress Security Best Practices',
-      excerpt: 'Protect your WordPress site from threats with these essential security measures and best practices for 2026.',
-      featuredImage: 'https://images.unsplash.com/photo-1563986768609-322da13575f3',
-      date: '2026-02-08',
-      category: 'Security'
-    },
-    {
-      id: 3,
-      slug: 'ecommerce-trends-2026',
-      title: 'E-commerce Trends to Watch in 2026',
-      excerpt: 'Discover the latest e-commerce trends that will shape online shopping experiences and drive sales in 2026.',
-      featuredImage: 'https://images.unsplash.com/photo-1557821552-17105176677c',
-      date: '2026-02-05',
-      category: 'E-commerce'
-    },
-    {
-      id: 4,
-      slug: 'seo-optimization-guide',
-      title: 'Complete SEO Optimization Guide',
-      excerpt: 'Master SEO in 2026 with our comprehensive guide covering on-page, off-page, and technical SEO strategies.',
-      featuredImage: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a',
-      date: '2026-02-01',
-      category: 'SEO'
-    },
-    {
-      id: 5,
-      slug: 'web-design-trends-2026',
-      title: 'Web Design Trends for 2026',
-      excerpt: 'Explore the most influential web design trends that will define modern websites in 2026.',
-      featuredImage: 'https://images.unsplash.com/photo-1558655146-d09347e92766',
-      date: '2026-01-28',
-      category: 'Design'
-    },
-    {
-      id: 6,
-      slug: 'mobile-first-development',
-      title: 'Mobile-First Development Strategies',
-      excerpt: 'Learn why mobile-first design is crucial and how to implement it effectively in your projects.',
-      featuredImage: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c',
-      date: '2026-01-25',
-      category: 'Development'
-    },
-    ,
-    {
-      id: 7,
-      slug: 'what-is-wordpress',
-      title: 'What Is WordPress and Why Is It the Best CMS?',
-      excerpt: 'Discover what WordPress is and why it powers 43% of all websites. Learn the benefits, features, and reasons why WordPress is the best CMS for your business website.',
-      featuredImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c',
-      date: '2025-01-01',
-      category: 'WordPress'
-    }
-
-  ]);
+  
 
   const [visiblePosts, setVisiblePosts] = useState(6);
 
