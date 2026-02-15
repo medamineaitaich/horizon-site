@@ -264,9 +264,10 @@ const BlogPostPage = () => {
               </div>
 
               <div 
-                className="prose prose-lg max-w-none mb-12"
-                dangerouslySetInnerHTML={{ __html: post.content }}
-              />
+  className="prose prose-lg max-w-none mb-12 text-gray-900"
+  dangerouslySetInnerHTML={{ __html: post.content }}
+/>
+
 
               {relatedPosts.length > 0 && (
                 <div className="border-t border-gray-200 pt-12">
