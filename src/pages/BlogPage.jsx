@@ -64,7 +64,18 @@ const BlogPage = () => {
       featuredImage: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c',
       date: '2026-01-25',
       category: 'Development'
+    },
+    ,
+    {
+      id: 7,
+      slug: 'what-is-wordpress',
+      title: 'What Is WordPress and Why Is It the Best CMS?',
+      excerpt: 'Discover what WordPress is and why it powers 43% of all websites. Learn the benefits, features, and reasons why WordPress is the best CMS for your business website.',
+      featuredImage: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c',
+      date: '2025-01-01',
+      category: 'WordPress'
     }
+
   ]);
 
   const [visiblePosts, setVisiblePosts] = useState(6);
